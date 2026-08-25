@@ -1,0 +1,36 @@
+import type { QrGeneratorState, QrPreviewState } from "@/features/qr/types"
+
+export function toPreviewState(state: QrGeneratorState): QrPreviewState {
+  return {
+    contentType: state.contentType,
+    url: state.url,
+    text: state.text,
+    email: state.email,
+    emailSubject: state.emailSubject,
+    phone: state.phone,
+    wifiSsid: state.wifiSsid,
+    wifiPassword: state.wifiPassword,
+    wifiEncryption: state.wifiEncryption,
+    wifiHidden: state.wifiHidden,
+    foreground: state.foreground,
+    background: state.background,
+    gradientType: state.gradientType,
+    gradientStart: state.gradientStart,
+    gradientEnd: state.gradientEnd,
+    gradientRotation: state.gradientRotation,
+    dotStyle: state.dotStyle,
+    cornerSquareStyle: state.cornerSquareStyle,
+    cornerDotStyle: state.cornerDotStyle,
+    margin: state.margin,
+    errorLevel: state.errorLevel,
+    logoEnabled: state.logoEnabled,
+    logoSrc: state.logoSrc,
+    logoSize: state.logoSize,
+    logoMargin: state.logoMargin,
+    logoHideDots: state.logoHideDots,
+    logoColorOverwrite: state.logoColorOverwrite,
+    logoOverwriteColor: state.logoOverwriteColor,
+    ditherMode: state.ditherMode,
+    ditherIntensity: state.ditherIntensity,
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Glyph",
+  "short_name": "Glyph",
+  "description": "Advanced QR code generator with colors, gradients, logos, and export options.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a1208",
+  "theme_color": "#1a1208",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

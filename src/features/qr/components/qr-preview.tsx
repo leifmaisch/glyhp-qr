@@ -17,9 +17,8 @@ export function QrPreview({ containerRef, className }: QrPreviewProps) {
           surfaceDepthFrame
         )}
       >
-        <div className="flex shrink-0 items-center justify-between border-b border-border/60 px-3 py-2">
+        <div className="flex shrink-0 border-b border-border/60 px-3 py-2">
           <p className="text-title">Preview</p>
-          <p className="text-caption">Live update</p>
         </div>
         <div
           style={squircle}

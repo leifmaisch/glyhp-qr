@@ -28,7 +28,6 @@ import {
   HeroDescription,
   HeroFrame,
   HeroIntro,
-  HeroLabel,
   HeroShowcase,
   HeroTitle,
 } from "@/components/ui/hero"
@@ -42,7 +41,6 @@ export default function Home() {
         <Hero>
           <HeroFrame>
             <HeroIntro>
-              <HeroLabel>Advanced QR code generator</HeroLabel>
               <HeroTitle>Design QR codes that actually look good</HeroTitle>
               <HeroDescription>
                 Custom colors, gradients, dot patterns, embedded logos, dither

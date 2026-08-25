@@ -1,7 +1,6 @@
 import type { QrErrorLevel } from "@/features/qr/types"
 
 export const ERROR_CORRECTION_LOGO_FACTORS: Record<QrErrorLevel, number> = {
-  L: 0.07,
   M: 0.15,
   Q: 0.25,
   H: 0.3,

@@ -3,7 +3,6 @@
 import {
   ExportIcon,
   ImageSquareIcon,
-  PaletteIcon,
   QrCodeIcon,
 } from "@phosphor-icons/react"
 
@@ -13,11 +12,6 @@ import { FeatureCard, Features } from "@/components/ui/features"
 export function HomeFeatures() {
   return (
     <Features id="features" title="What's included">
-      <FeatureCard
-        icon={<PaletteIcon weight={iconWeight} className="size-12" />}
-        title="Colors and gradients"
-        description="Solid fills, linear and radial gradients, and full control over foreground and background."
-      />
       <FeatureCard
         icon={<ImageSquareIcon weight={iconWeight} className="size-12" />}
         title="Embedded logos"

@@ -10,7 +10,7 @@ export type QrDotStyle =
 
 export type QrCornerStyle = "square" | "dot" | "extra-rounded"
 
-export type QrErrorLevel = "L" | "M" | "Q" | "H"
+export type QrErrorLevel = "M" | "Q" | "H"
 
 export type QrDitherMode = "none" | "ordered" | "floyd-steinberg"
 

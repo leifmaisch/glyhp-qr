@@ -26,7 +26,6 @@ const exportFormats: { value: QrExportFormat; label: string }[] = [
 ]
 
 const errorLevels: { value: QrErrorLevel; label: string }[] = [
-  { value: "L", label: "Low (7%)" },
   { value: "M", label: "Medium (15%)" },
   { value: "Q", label: "Quartile (25%)" },
   { value: "H", label: "High (30%)" },

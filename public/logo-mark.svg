@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <mask id="finders">
+    <rect width="64" height="64" fill="white"/>
+    <rect x="14" y="14" width="6" height="6" rx="1.5" fill="black"/>
+    <rect x="44" y="14" width="6" height="6" rx="1.5" fill="black"/>
+    <rect x="14" y="44" width="6" height="6" rx="1.5" fill="black"/>
+  </mask>
+  <g mask="url(#finders)">
+    <rect x="8" y="8" width="18" height="18" rx="4" fill="#f97316"/>
+    <rect x="38" y="8" width="18" height="18" rx="4" fill="#f97316"/>
+    <rect x="8" y="38" width="18" height="18" rx="4" fill="#f97316"/>
+  </g>
+  <rect x="32" y="32" width="5" height="5" rx="1.25" fill="#fb923c"/>
+  <rect x="40" y="32" width="5" height="5" rx="1.25" fill="#f97316"/>
+  <rect x="48" y="32" width="5" height="5" rx="1.25" fill="#fb923c"/>
+  <rect x="32" y="40" width="5" height="5" rx="1.25" fill="#f97316"/>
+  <rect x="40" y="48" width="5" height="5" rx="1.25" fill="#fb923c"/>
+  <rect x="48" y="48" width="5" height="5" rx="1.25" fill="#f97316"/>
+</svg>

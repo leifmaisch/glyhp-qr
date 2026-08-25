@@ -29,6 +29,8 @@ function resolveGradient(
 
 export function resolveForegroundColor(state: QrStyleState): QrColorValue {
   const foreground = normalizeHex(state.foreground, "#f97316")
+  if (state.gradientType === "none") return foreground
+
   const gradientStart = normalizeHex(state.gradientStart, foreground)
   const gradientEnd = normalizeHex(state.gradientEnd, foreground)
   return resolveGradient(state, gradientStart, gradientEnd)

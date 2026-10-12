@@ -6,16 +6,10 @@ import { resolveLogoSrc } from "@/features/qr/core/logo-color"
 import type { QrLogoState } from "@/features/qr/types"
 
 export function useLogoPreview(state: QrLogoState) {
-  const [previewSrc, setPreviewSrc] = useState<string | null>(state.logoSrc)
+  const [processedSrc, setProcessedSrc] = useState<string | null>(null)
 
   useEffect(() => {
-    if (!state.logoSrc) {
-      setPreviewSrc(null)
-      return
-    }
-
-    if (!state.logoColorOverwrite) {
-      setPreviewSrc(state.logoSrc)
+    if (!state.logoSrc || !state.logoColorOverwrite) {
       return
     }
 
@@ -23,10 +17,10 @@ export function useLogoPreview(state: QrLogoState) {
 
     void resolveLogoSrc(state)
       .then((src) => {
-        if (!cancelled) setPreviewSrc(src ?? state.logoSrc)
+        if (!cancelled) setProcessedSrc(src ?? state.logoSrc)
       })
       .catch(() => {
-        if (!cancelled) setPreviewSrc(state.logoSrc)
+        if (!cancelled) setProcessedSrc(state.logoSrc)
       })
 
     return () => {
@@ -39,5 +33,13 @@ export function useLogoPreview(state: QrLogoState) {
     state.logoOverwriteColor,
   ])
 
-  return previewSrc
+  if (!state.logoSrc) {
+    return null
+  }
+
+  if (!state.logoColorOverwrite) {
+    return state.logoSrc
+  }
+
+  return processedSrc ?? state.logoSrc
 }

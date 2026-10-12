@@ -31,7 +31,10 @@ export function SliderControl({
   const [localValue, setLocalValue] = useState(value)
   const draggingRef = useRef(false)
   const onChangeRef = useRef(onChange)
-  onChangeRef.current = onChange
+
+  useEffect(() => {
+    onChangeRef.current = onChange
+  }, [onChange])
 
   useEffect(() => {
     if (!draggingRef.current) {
